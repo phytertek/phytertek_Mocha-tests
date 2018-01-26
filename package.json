@@ -5,6 +5,7 @@
   "scripts": {
     "start": "nodemon --watch src src/app.js",
     "test": "eslint tests/*.js && eslint src/*.js && mocha -R nyan tests",
+    "test:sis": "mocha -R json tests | tee testRun.json",
     "watch": "npm test -- --watch"
   },
   "license": "ISC",

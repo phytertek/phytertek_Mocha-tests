@@ -47,7 +47,7 @@ const expectStatus = (expected, res, path) => {
         const msg = `Expected status ${expected} but got ${res.status} from ` +
           `GET ${path}; scroll up to see response body`;
         /* eslint no-console: 0 */
-        console.log(`Response body for GET ${path}:\n`, res.body);
+        //console.log(`Response body for GET ${path}:\n`, res.body);
         throw new Error(msg);
       }
 
